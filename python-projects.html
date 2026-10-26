@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><meta name="theme-color" content="#f7f7f2"/><meta name="description" content="Python examples: factorial, Fibonacci, and converting a structure-like dataclass into a dictionary."/><title>Python Programs — Ananya Soni</title><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet"/><link rel="stylesheet" href="styles.css"/><script src="mini-theme.js" defer></script></head>
+<body class="app-page"><a class="skip-link" href="#app-main">Skip to content</a><header class="site-header"><nav class="nav wrap" aria-label="Main navigation"><a class="brand" href="index.html"><span class="brand-mark">P</span><span>portfolio<span class="brand-dot">.</span></span></a><div class="app-nav"><a href="index.html#projects">← Back to projects</a><button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch color theme"><span class="theme-icon" aria-hidden="true">☾</span></button></div></nav></header>
+<main id="app-main" class="wrap app-main"><div class="app-heading"><p class="eyebrow">MINI PROJECT / 01</p><h1>Python Programs Collection<span class="accent">.</span></h1><p>Three small examples that practise recursion, sequences, and mapping structured data into a dictionary.</p></div><section class="example-card"><div class="example-heading"><span class="example-number mono">01</span><div><h2>Factorial</h2><p>Multiply every positive integer from 1 through <code>n</code>. This recursive version uses <code>0! = 1</code> as its base case.</p></div></div><div class="code-window"><div class="code-top"><span>factorial.py</span><span class="code-language">PYTHON</span></div><pre><code>def factorial(n):
+    if n &lt; 0:
+        raise ValueError("n must be non-negative")
+    if n == 0:
+        return 1
+    return n * factorial(n - 1)
+
+print(factorial(5))  # 120</code></pre></div></section><section class="example-card"><div class="example-heading"><span class="example-number mono">02</span><div><h2>Fibonacci sequence</h2><p>Build a list where each number is the sum of the previous two. The function returns exactly the requested number of terms.</p></div></div><div class="code-window"><div class="code-top"><span>fibonacci.py</span><span class="code-language">PYTHON</span></div><pre><code>def fibonacci(count):
+    if count &lt; 0:
+        raise ValueError("count must be non-negative")
+
+    sequence = []
+    first, second = 0, 1
+    for _ in range(count):
+        sequence.append(first)
+        first, second = second, first + second
+    return sequence
+
+print(fibonacci(7))  # [0, 1, 1, 2, 3, 5, 8]</code></pre></div></section><section class="example-card"><div class="example-heading"><span class="example-number mono">03</span><div><h2>Structure to dictionary</h2><p>A Python dataclass gives a clear structure for related values. <code>asdict()</code> converts its fields into a regular dictionary.</p></div></div><div class="code-window"><div class="code-top"><span>structure_to_dictionary.py</span><span class="code-language">PYTHON</span></div><pre><code>from dataclasses import asdict, dataclass
+
+@dataclass
+class Student:
+    name: str
+    year: int
+    course: str
+
+student = Student("Ananya", 2, "BTech")
+student_data = asdict(student)
+
+print(student_data)
+# {'name': 'Ananya', 'year': 2, 'course': 'BTech'}</code></pre></div></section><p class="app-footnote">Try copying a snippet into a Python file and changing the sample inputs.</p></main><footer class="footer"><div class="wrap footer-inner"><a class="brand" href="index.html"><span class="brand-mark">P</span><span>portfolio<span class="brand-dot">.</span></span></a><p>Designed &amp; built with curiosity <span class="accent">✳</span></p><span class="mono">ANANYA SONI</span></div></footer></body></html>

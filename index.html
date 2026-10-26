@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f7f2" />
+    <meta name="description" content="Portfolio of Ananya Soni, a BTech second-year student at JECRC University in Jaipur." />
+    <title>Ananya Soni — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <nav class="nav wrap" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Portfolio home"><span class="brand-mark">P</span><span>portfolio<span class="brand-dot">.</span></span></a>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation"><span></span><span></span></button>
+        <div class="nav-links" id="nav-links">
+          <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+          <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch color theme"><span class="theme-icon" aria-hidden="true">☾</span></button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero wrap" id="home">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot"></span> OPEN TO LEARNING &amp; OPPORTUNITIES</p>
+          <h1>Hello, I’m <span class="highlight">Ananya Soni</span>.<br />I build things for the web<span class="accent">.</span></h1>
+          <p class="hero-text">I’m a college student exploring code, solving problems, and turning ideas into useful digital experiences. This is my little corner of the internet.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↘</span></a><a class="text-link" href="#contact">Say hello <span aria-hidden="true">→</span></a></div>
+          <div class="hero-meta"><span><i class="meta-line"></i> Based in Jaipur</span><span class="mono">LEARNING BY BUILDING</span></div>
+        </div>
+        <div class="hero-visual" aria-label="Decorative abstract portfolio illustration">
+          <div class="visual-grid"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="visual-card"><span class="card-label mono">CURRENT FOCUS</span><div class="code-lines"><i></i><i></i><i></i><i></i></div><div class="code-caption"><span class="code-dot"></span> building my next idea<span class="cursor">_</span></div></div>
+          <div class="floating-chip chip-top">✳ <span>curiosity</span></div><div class="floating-chip chip-bottom"><span class="chip-number">01</span> always learning</div><span class="visual-star star-one">✳</span><span class="visual-star star-two">✳</span>
+          <span class="visual-index mono">FIG. 01 — THE PROCESS</span>
+        </div>
+        <a class="scroll-hint mono" href="#about"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
+      </section>
+
+      <section class="section about-section" id="about"><div class="wrap section-grid">
+        <div class="section-heading"><p class="eyebrow">01 / ABOUT ME</p><h2>A little about<br />who I am<span class="accent">.</span></h2></div>
+        <div class="about-copy"><p class="lead">I’m <strong>Ananya Soni</strong>, a second-year BTech student at <strong>JECRC University</strong> in Jaipur, interested in building thoughtful things with technology.</p><p>My technical skills include C, C++, and Python.</p><p>[Add a short personal introduction or interests here.]</p><div class="about-note"><span class="note-icon">✎</span><span><strong>Your story goes here</strong><br />Add any other details you’d like to share.</span></div></div>
+      </div></section>
+
+      <section class="section skills-section" id="skills"><div class="wrap">
+        <div class="section-heading centered"><p class="eyebrow">02 / SKILLS</p><h2>Tools I’m learning<span class="accent">.</span></h2><p class="section-intro">A growing toolkit, built one project at a time.</p></div>
+        <div class="skills-grid">
+          <article class="skill-card skill-card-feature"><span class="skill-icon">C</span><h3>C</h3><p>Programming language</p><span class="skill-index mono">01 / 03</span></article>
+          <article class="skill-card skill-card-feature"><span class="skill-icon">C<span class="plus-mark">++</span></span><h3>C++</h3><p>Programming language</p><span class="skill-index mono">02 / 03</span></article>
+          <article class="skill-card skill-card-feature"><span class="skill-icon">Py</span><h3>Python</h3><p>Programming language</p><span class="skill-index mono">03 / 03</span></article>
+        </div>
+      </div></section>
+
+      <section class="section projects-section" id="projects"><div class="wrap">
+        <div class="projects-top"><div class="section-heading"><p class="eyebrow">03 / SELECTED WORK</p><h2>Things I’ve made<span class="accent">.</span></h2><p class="section-intro">Small projects, big lessons. More on the way.</p></div><span class="project-count mono"><span id="visible-count">05</span> / 05 PROJECTS</span></div>
+        <div class="project-controls"><label class="search-box"><span aria-hidden="true">⌕</span><input id="project-search" type="search" placeholder="Search projects..." aria-label="Search projects" /><kbd>↵</kbd></label><div class="filter-list" role="group" aria-label="Filter projects by technology"><button class="filter-btn active" data-filter="all" aria-pressed="true">All</button><button class="filter-btn" data-filter="Python" aria-pressed="false">Python</button><button class="filter-btn" data-filter="JavaScript" aria-pressed="false">JavaScript</button><button class="filter-btn" data-filter="AI Tools" aria-pressed="false">AI Tools</button></div></div>
+        <div class="projects-grid" id="projects-grid">
+          <article class="project-card" data-tech="Python" data-search="python programs collection beginner scripts utilities"><div class="project-art art-python"><span class="art-label mono">PY / 001</span><span class="art-symbol">{ }</span><span class="art-caption">little scripts,<br />useful things.</span></div><div class="project-info"><div class="project-title-row"><h3>Python Programs Collection</h3><span class="project-arrow" aria-hidden="true">↗</span></div><p>A collection of small Python programs built while learning the fundamentals.</p><div class="project-footer"><span class="tech-label">Python</span><a class="project-link" href="python-projects.html" aria-label="Open Python Programs Collection">Open project ↗</a></div></div></article>
+          <article class="project-card" data-tech="Python" data-search="messy python code improvement refactor clean readable"><div class="project-art art-refactor"><span class="art-label mono">PY / 002</span><span class="art-lines"><i></i><i></i><i></i><i></i><i></i></span><span class="art-caption">make it<br />make sense.</span><span class="art-check">✓</span></div><div class="project-info"><div class="project-title-row"><h3>Messy Python Code Improvement</h3><span class="project-arrow" aria-hidden="true">↗</span></div><p>Taking tangled starter code and improving its readability and structure.</p><div class="project-footer"><span class="tech-label">Python</span><a class="project-link" href="code-improvement.html" aria-label="Open Messy Python Code Improvement">Open project ↗</a></div></div></article>
+          <article class="project-card" data-tech="AI Tools" data-search="bug fixing cursor ai debugging code assistant"><div class="project-art art-ai"><span class="art-label mono">DEV / 003</span><span class="ai-orbit">✳</span><span class="ai-bracket">&lt; / &gt;</span><span class="art-caption">find the bug.<br />understand why.</span></div><div class="project-info"><div class="project-title-row"><h3>Bug Fixing Using Cursor AI</h3><span class="project-arrow" aria-hidden="true">↗</span></div><p>Practising a thoughtful AI-assisted workflow to investigate and fix bugs.</p><div class="project-footer"><span class="tech-label">AI Tools</span><a class="project-link" href="bug-fixing.html" aria-label="Open Bug Fixing Using Cursor AI">Open project ↗</a></div></div></article>
+          <article class="project-card" data-tech="JavaScript" data-search="interactive quiz application javascript questions score"><div class="project-art art-quiz"><span class="art-label mono">JS / 004</span><span class="quiz-card"><span class="quiz-q">Q.</span><span class="quiz-answer">A&nbsp; &nbsp; B&nbsp; &nbsp; C</span></span><span class="art-caption">think fast.<br />have fun.</span></div><div class="project-info"><div class="project-title-row"><h3>Interactive Quiz Application</h3><span class="project-arrow" aria-hidden="true">↗</span></div><p>A browser-based quiz that makes learning feel a little more playful.</p><div class="project-footer"><span class="tech-label">JavaScript</span><a class="project-link" href="quiz.html" aria-label="Open Interactive Quiz Application">Open project ↗</a></div></div></article>
+          <article class="project-card" data-tech="JavaScript" data-search="book reading list application javascript books reading tracker"><div class="project-art art-books"><span class="art-label mono">JS / 005</span><span class="book-stack"><i></i><i></i><i></i><i></i></span><span class="art-caption">one more<br />chapter.</span><span class="book-star">✳</span></div><div class="project-info"><div class="project-title-row"><h3>Book Reading List Application</h3><span class="project-arrow" aria-hidden="true">↗</span></div><p>A simple way to keep track of books to read and books already loved.</p><div class="project-footer"><span class="tech-label">JavaScript</span><a class="project-link" href="books.html" aria-label="Open Book Reading List Application">Open project ↗</a></div></div></article>
+        </div><p class="empty-state" id="empty-state" hidden>No projects found. Try another search or filter.</p>
+      </div></section>
+
+      <section class="section contact-section" id="contact"><div class="wrap contact-wrap"><div class="contact-copy"><p class="eyebrow">04 / CONTACT</p><h2>Have an idea?<br />Let’s talk<span class="accent">.</span></h2><p>I’d love to hear from you—whether it’s about a project, a collaboration, or just to say hi.</p><a class="button button-light" href="mailto:ananyasoni3960@gmail.com">ananyasoni3960@gmail.com <span aria-hidden="true">↗</span></a></div><div class="contact-side"><span class="contact-star">✳</span><p class="mono">GOOD THINGS START<br />WITH A CONVERSATION.</p><div class="social-links"><a href="https://github.com/ananyasoni19" target="_blank" rel="noopener noreferrer" aria-label="Ananya Soni on GitHub">GitHub ↗</a><a href="#contact" class="placeholder-link" aria-label="Add your LinkedIn profile link">LinkedIn ↗</a></div></div></div></section>
+    </main>
+    <footer class="footer"><div class="wrap footer-inner"><a class="brand" href="#home"><span class="brand-mark">P</span><span>portfolio<span class="brand-dot">.</span></span></a><p>Designed &amp; built with curiosity <span class="accent">✳</span></p><span class="mono">© <span id="year"></span> ANANYA SONI</span></div></footer>
+    <div class="faq-chat-widget">
+      <section class="faq-chat-panel" id="faq-chat-panel" role="dialog" aria-label="Portfolio FAQ chat" hidden>
+        <header class="faq-chat-header"><div class="faq-chat-heading"><span class="faq-chat-status"></span><div><h2>Portfolio FAQ</h2><p>Quick answers about this site</p></div></div><button class="faq-chat-close" id="faq-chat-close" type="button" aria-label="Close chat">×</button></header>
+        <div class="faq-chat-messages" id="faq-chat-messages" aria-live="polite" aria-relevant="additions">
+          <div class="faq-chat-message bot-message">Hi! Ask me a basic question about this portfolio, or choose one below.</div>
+          <div class="faq-suggestions" id="faq-suggestions">
+            <button type="button">What are your skills?</button>
+            <button type="button">Tell me about your projects.</button>
+            <button type="button">What is your Book Reading List project?</button>
+            <button type="button">What is your Quiz Application?</button>
+            <button type="button">What is your Python Programs Collection?</button>
+            <button type="button">How can I contact you?</button>
+          </div>
+        </div>
+        <form class="faq-chat-form" id="faq-chat-form"><label class="visually-hidden" for="faq-chat-input">Type a question</label><input id="faq-chat-input" name="question" type="text" placeholder="Type a question…" autocomplete="off" required/><button type="submit">Send</button></form>
+      </section>
+      <button class="faq-chat-launcher" id="faq-chat-launcher" type="button" aria-expanded="false" aria-controls="faq-chat-panel"><span aria-hidden="true">✳</span> Ask me</button>
+    </div>
+  </body>
+</html>
